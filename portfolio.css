@@ -12,6 +12,7 @@ html{
   cursor: url('80922.png'), auto;
 }
 
+
 #homeP {
   transition: margin-top 0.4s ease;
 }
@@ -74,16 +75,16 @@ span:hover {
 @keyframes fall {
   0% {
     transform: translateY(100vh) rotate(720deg);
-    opacity: 0.3;
+    opacity: 0.1;
     
   }
   50% {
     transform: translateY(50vh) rotate(360deg);
-    opacity: 0.7;
+    opacity: 0.3;
   }
   100% {
     transform: translateY(-300px) rotate(0deg);
-    opacity: 0.3;
+    opacity: 0.1;
   }
 }
 
@@ -94,7 +95,6 @@ span:hover {
 
 .faceCard {
   background: rgba(245, 243, 238, 0.048);
-  
   height: 600px;
   width: 320px;
   margin-top: 150px;
@@ -104,10 +104,10 @@ span:hover {
   align-items: center;
   flex-direction: column;
   margin-left: 330px;
-  position: sticky;
   top: 50px;
   transition: 0.3s;
   box-shadow: 10px 10px 9px grey;
+  position: sticky;
 }
 
 .faceCard:hover {
@@ -324,4 +324,172 @@ a, a:visited, a:active {
   top: 20px;
   z-index: 2;
 }
+#overflowL {
+  margin: 0;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+#overflowM {
+  width: 500px;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+
+.counters {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.counterD {
+  color:rgb(87, 86, 86);
+  font-size: 18px;
+  width: 100px;
+}
+
+@media (max-width: 950px) {
+  .body {
+    flex-direction: column !important;
+    overflow-x: hidden;
+    align-items: center;
+    
+  }
+  .index {
+    position: static;
+  }
+  .faceCard {
+    margin-left: 0;
+    width: 65%;
+    position: static;
+  }
+  .faceCard:hover {
+    width: 65%;
+    height: 600px;
+  }
+  .contents {
+    width: 80%;
+  }
+
+  #clock {
+    display: none;
+  }
+
+  .projects {
+    width: 350px;
+  }
+
+  #overflowL {
+    font-size: 50px;
+  }
+  #overflowM {
+    font-size: 18px;
+    width: 400px;
+  }
+
+  #overflowS {
+    font-size: 14px;
+    width: 240px;
+  }
+  .counters {
+    font-size: 50px;
+    
+  }
+  .counterD {
+    font-size: 15px;
+    width: 80px;
+  }
+  
+  .inp {
+  width: 200px;
+  }
+  
+  .btn {
+    width:420px;
+  }
+
+  .tools {
+    width: 350px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+
+@media (min-width: 951px ) and (max-width: 1400px) {
+  .body {
+    padding-left: 0;
+    column-gap: 50px;
+  }
+  .faceCard {
+    margin-left: 0;
+    width: 262px;
+    height: 580px;
+    transition: 0.3s;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .faceCard:hover {
+    width:262px;
+    height: 590px;
+  }
+  .contents {
+    width: 80%;
+  }
+
+  #clock {
+    display: none;
+  }
+
+  .projects {
+    width: 350px;
+  }
+
+  #overflowL {
+    font-size: 50px;
+  }
+  #overflowM {
+    font-size: 18px;
+    width: 400px;
+  }
+
+  #overflowS {
+    font-size: 14px;
+    width: 240px;
+  }
+  .counters {
+    font-size: 50px;
+    
+  }
+  .counterD {
+    font-size: 15px;
+    width: 80px;
+  }
+  
+  .inp {
+  width: 250px;
+  }
+  
+  .btn {
+    width: 520px;
+  }
+
+}
+.Addhundredpx {
+    margin-top: 100px;
+  }
+@media (min-width:1400px) {
+  .faceCard {
+    margin-left: 100px;
+  }
+  
+}
+
+
+
+
 
